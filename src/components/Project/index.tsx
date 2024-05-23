@@ -1,3 +1,4 @@
+import { profile } from "console";
 import SectionTitle from "../SectionTitle";
 import ProjectItem from "./ProjectItem";
 
@@ -10,14 +11,14 @@ const Project = ({ project }: Pick<DataProps, "project">) => {
         <SectionTitle>Team Project</SectionTitle>
         <div className="flex flex-col gap-24">
           {[...project]
-            .reverse()
             .filter((project) => project.isTeam)
             .map((project) => (
               <ProjectItem key={project.id} {...project} />
             ))}
         </div>
       </div>
-      <div>
+
+      {/* <div>
         <SectionTitle>Personal Project</SectionTitle>
         <div className="flex flex-col gap-24">
           {[...project]
@@ -27,7 +28,7 @@ const Project = ({ project }: Pick<DataProps, "project">) => {
               <ProjectItem key={project.id} {...project} />
             ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
