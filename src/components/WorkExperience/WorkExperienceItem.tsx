@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { WorkExperienceProps } from "@/types";
-import Button from "../Detail/Button";
 
 const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkExperienceProps) => {
   return (
