@@ -46,7 +46,7 @@
       "description": "웹툰 큐레이션 커뮤니티 서비스",
       "repoUrl": "https://github.com/SSAFY-Mogul/back-end",
       "isTeam": true,
-      "period": ["2024. 01", "2024. 04"],
+      "period": ["2024. 01", "2024. 02"],
       "stack": ["spring boot", "mariadb", "jenkins", "docker", "nginx", "s3", "redis", "elk stack"]
     },
     {
