@@ -20,7 +20,7 @@
     "next-seo": "^5.15.0",
     "next-themes": "^0.2.1",
     "raw-loader": "^4.0.2",
-    "react": "18.2.0",
+    "react": "^18.3.1",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
     "remark-gfm": "^3.0.1",
