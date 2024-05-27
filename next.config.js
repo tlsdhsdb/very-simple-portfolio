@@ -14,13 +14,7 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ['img.shields.io'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'img.shields.io',
-      },
-    ],
+    domains: ['img.shields.io']
   },
 };
 
