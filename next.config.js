@@ -13,6 +13,9 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    domains: ['img.shields.io'],
+  }
 };
 
 module.exports = nextConfig;
