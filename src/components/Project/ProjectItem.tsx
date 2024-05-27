@@ -65,7 +65,7 @@ const ProjectItem = ({
           
             {stack.map((stack) => (
               <div key={stack} className="flex items-center h-8">
-              <Image
+              <img
               src={dict[stack]}
               width="20"
               height="5"
