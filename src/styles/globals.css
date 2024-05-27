@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, NanumGothic, sans-serif;
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  font-weight: 200;
+  src: url("/font/NanumGothic.ttf") format("truetype");
+}
+
 @layer base {
   h1 {
     @apply font-semibold text-5xl py-2;
