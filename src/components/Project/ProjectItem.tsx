@@ -62,8 +62,9 @@ const ProjectItem = ({
         <div>
           <blockquote className="whitespace-pre-wrap">{`${description}`}</blockquote>
           <div className="flex gap-1 flex-wrap">
+          
             {stack.map((stack) => (
-
+              <div key={stack} className="flex items-center h-8">
               <Image
               src={dict[stack]}
               width="20"
@@ -71,7 +72,9 @@ const ProjectItem = ({
               alt={name}
               className="object-fit rounded-lg border-[1px] border-GRAY_LIGHT dark:border-white border-solid w-20 h-7"
             />
+            </div>
             ))}
+            
           </div>
         </div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown ?? ""}</ReactMarkdown>
