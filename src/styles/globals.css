@@ -11,7 +11,7 @@ body {
 @font-face {
   font-family: "NanumGothic";
   font-weight: 200;
-  src: url("/font/NanumGothic.ttf") format("truetype");
+  src: url("/public/font/NanumGothic.ttf") format("truetype");
 }
 
 @layer base {
