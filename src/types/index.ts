@@ -15,6 +15,15 @@ export interface WorkExperienceProps {
   imgSrc?: string;
 }
 
+export interface SkillExperienceProps {
+  id: number;
+  name: string;
+  description?: string;
+  level:number;
+  markdown?: string;
+  imgSrc?: string;
+}
+
 export interface ProjectProps {
   id: number;
   name: string;
@@ -42,6 +51,7 @@ export interface DataProps {
   };
   information: InformationProps;
   workExperience: WorkExperienceProps[];
+  skillExperience: SkillExperienceProps[];
   project: ProjectProps[];
   activity: {
     id: number;
