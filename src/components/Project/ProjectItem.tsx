@@ -16,6 +16,24 @@ const ProjectItem = ({
   markdown,
   imgSrc,
 }: ProjectProps) => {
+  const dict: Record<string, string> = {
+    "spring boot":"https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white",
+    "java":"https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white",
+    "spring security":"https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=Spring Security&logoColor=white",
+    "nginx":"https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white",
+    "redis":"https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=Redis&logoColor=white",
+    "ec2":"https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white",
+    "s3":"https://img.shields.io/badge/Amazon%20S3-569A31?style=for-the-badge&logo=Amazon%20S3&logoColor=white",
+    "elastic search":"https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=Elasticsearch&logoColor=white",
+    "python":"https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white",
+    "react":"https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white",
+    "nextjs":"https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white",
+    "mariadb":"https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white",
+    "jenkins":"https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white",
+    "docker":"https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white",
+    "kafka":"https://img.shields.io/badge/apachekafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"
+  
+  }
   return (
     <div className="flex flex-col md:flex-row gap-2 md:gap-0">
       <div className="flex flex-col gap-2">
@@ -44,14 +62,19 @@ const ProjectItem = ({
         <div>
           <blockquote className="whitespace-pre-wrap">{`${description}`}</blockquote>
           <div className="flex gap-1 flex-wrap">
+          
             {stack.map((stack) => (
-              <span
-                key={stack}
-                className=" bg-BLACK dark:bg-white  py-[2px] px-1.5 rounded-md text-xs font-medium font-mono whitespace-nowrap text-white dark:text-BLACK"
-              >
-                {stack}
-              </span>
+              <div key={stack} className="flex items-center h-8">
+              <Image
+              src={dict[stack]}
+              width="20"
+              height="5"
+              alt={name}
+              className="object-fit rounded-lg border-[1px] border-GRAY_LIGHT dark:border-white border-solid w-20 h-7"
+            />
+            </div>
             ))}
+            
           </div>
         </div>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown ?? ""}</ReactMarkdown>
