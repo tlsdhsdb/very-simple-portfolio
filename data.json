@@ -21,6 +21,25 @@
     }
   ],
 
+  "skillExperience":[
+    {
+      "id": 0,
+      "name": "Spring Boot",
+      "level": "4"
+    },
+    {
+      "id": 1,
+      "name": "Java",
+      "level": "3"
+    },
+    {
+      "id": 2,
+      "name": "MariaDB",
+      "level": "3"
+    }
+  ],
+
+
   "project": [
     {
       "id": 0,
