@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { DefaultSeo } from "next-seo";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
+import Head from 'next/head';
 
 /**
  * @description SEO를 위해 본인의 정보로 수정해주세요.
@@ -50,6 +51,9 @@ const DEFAULT_SEO = {
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+    <Head>
+          <meta property="og:image" content="/images/preview.png" />
+        </Head>
       <DefaultSeo {...DEFAULT_SEO} />
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
