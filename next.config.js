@@ -15,7 +15,13 @@ const nextConfig = {
   },
   images: {
     domains: ['img.shields.io'],
-  }
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.shields.io',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
