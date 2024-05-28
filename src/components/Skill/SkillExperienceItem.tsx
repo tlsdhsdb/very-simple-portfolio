@@ -3,6 +3,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { SkillExperienceProps } from "@/types";
+import EmptyStar from "@/assets/images/emptyStar.svg";
+import FilledStar from "@/assets/images/filledStar.svg";
 
 const SkillExperienceItem = ({ name, level, markdown, imgSrc }: SkillExperienceProps) => {
   
@@ -12,23 +14,11 @@ const SkillExperienceItem = ({ name, level, markdown, imgSrc }: SkillExperienceP
     for (let i = 0; i < 5; i++) {
       if (i < level) {
         stars.push(
-          <Image
-            key={i}
-            src="/images/etc/star.png"
-            alt="Filled Star"
-            width={24}
-            height={20}
-          />
+          <FilledStar/>
         );
       } else {
         stars.push(
-          <Image
-            key={i}
-            src="/images/etc/empty_star.png"
-            alt="Empty Star"
-            width={24}
-            height={20}
-          />
+          <EmptyStar/>
         );
       }
     }
@@ -51,8 +41,8 @@ const SkillExperienceItem = ({ name, level, markdown, imgSrc }: SkillExperienceP
           )}
           <div className="flex flex-col w-48">
             <h3>{name}</h3>
-            <div className="flex flex-row pt-2 ">
-              {renderingStar(level)}
+            <div className="flex flex-row pt-2 justify-between">
+              숙련도{renderingStar(level)}
             </div>
           </div>
         </div>
