@@ -30,6 +30,7 @@ export interface ProjectProps {
   description: string;
   repoUrl: string;
   webUrl?: string;
+  wikiUrl?: string;
   isTeam?: boolean;
   period: string[];
   stack: string[];

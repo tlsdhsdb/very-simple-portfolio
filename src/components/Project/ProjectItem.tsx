@@ -15,6 +15,7 @@ const ProjectItem = ({
   stack,
   markdown,
   imgSrc,
+  wikiUrl
 }: ProjectProps) => {
   const dict: Record<string, string> = {
     "spring boot":"https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white",
@@ -54,7 +55,7 @@ const ProjectItem = ({
                 <span>{`${period[0]} - ${period[1]}`}</span>
               </div>
             </div>
-            <Links repoUrl={repoUrl} webUrl={webUrl} />
+            <Links repoUrl={repoUrl} webUrl={webUrl} wikiUrl={wikiUrl}/>
           </div>
         </div>
       </div>
