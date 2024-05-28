@@ -28,7 +28,6 @@ const Home: NextPage<DataProps> = ({
   certificate,
   award,
 }) => {
-  console.log(skillExperience)
   return (
     <>
       {/* <ScrollProgress /> */}
