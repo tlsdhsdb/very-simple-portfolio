@@ -21,7 +21,7 @@
     }
   ],
 
-  "skillExperience":[
+  "skillExperience": [
     {
       "id": 0,
       "name": "Spring Boot",
@@ -45,10 +45,21 @@
       "description": "동영상(숏폼)을 활용한 합주 동영상 공유 SNS 플랫폼",
       "repoUrl": "https://github.com/Bremen-Musicians/bremen",
       "webUrl": "",
-      "wikiUrl":"https://github.com/Bremen-Musicians/bremen/wiki",
+      "wikiUrl": "https://github.com/Bremen-Musicians/bremen/wiki",
       "isTeam": true,
       "period": ["2024. 04", "2024. 05"],
-      "stack": ["spring boot", "mariadb", "jenkins", "docker", "nginx", "s3", "redis"]
+      "stack": [
+        "spring boot",
+        "mariadb",
+        "jenkins",
+        "docker",
+        "nginx",
+        "s3",
+        "redis",
+        "nextjs",
+        "react",
+        "typescript"
+      ]
     },
     {
       "id": 1,
@@ -56,10 +67,21 @@
       "description": "냉장고 신선칸 모니터링 서비스",
       "repoUrl": "https://github.com/SSAFY-DANGO/BackEnd",
       "webUrl": "",
-      "wikiUrl":"https://github.com/SSAFY-DANGO/BackEnd/wiki",
+      "wikiUrl": "https://github.com/SSAFY-DANGO/BackEnd/wiki",
       "isTeam": true,
       "period": ["2024. 03", "2024. 04"],
-      "stack": ["spring boot", "mariadb", "jenkins", "docker", "nginx", "s3", "redis", "kafka"]
+      "stack": [
+        "spring boot",
+        "mariadb",
+        "jenkins",
+        "docker",
+        "nginx",
+        "s3",
+        "redis",
+        "kafka",
+        "react",
+        "javascript"
+      ]
     },
     {
       "id": 2,
@@ -67,10 +89,22 @@
       "description": "웹툰 큐레이션 커뮤니티 서비스",
       "repoUrl": "https://github.com/SSAFY-Mogul/back-end",
       "webUrl": "",
-      "wikiUrl":"https://github.com/SSAFY-Mogul/back-end/wiki",
+      "wikiUrl": "https://github.com/SSAFY-Mogul/back-end/wiki",
       "isTeam": true,
       "period": ["2024. 01", "2024. 02"],
-      "stack": ["spring boot", "mariadb", "jenkins", "docker", "nginx", "s3", "redis", "elastic search"]
+      "stack": [
+        "spring boot",
+        "mariadb",
+        "jenkins",
+        "docker",
+        "nginx",
+        "s3",
+        "redis",
+        "elastic search",
+        "nextjs",
+        "react",
+        "javascript"
+      ]
     },
     {
       "id": 3,
@@ -78,10 +112,10 @@
       "description": "혼자 여행하는 여행객을 대상으로 한 맛집 및 여행지 공유 서비스",
       "repoUrl": "https://github.com/SWIDX/Eats-Mate-Backend",
       "webUrl": "",
-      "wikiUrl":"",
+      "wikiUrl": "",
       "isTeam": true,
       "period": ["2022. 06", "2022. 10"],
-      "stack": ["spring boot", "mariadb", "s3", "redis"]
+      "stack": ["spring boot", "mariadb", "s3", "redis", "react"]
     }
   ],
   "activity": [
