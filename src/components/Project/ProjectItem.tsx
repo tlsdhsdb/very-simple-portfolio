@@ -36,7 +36,7 @@ const ProjectItem = ({
     react:
       "https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white",
     nextjs:
-      "https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white",
+      "https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white",
     mariadb:
       "https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white",
     jenkins:
